@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get install apache2 -y
 WORKDIR /var/www/html
 EXPOSE 80
-RUN echo "<h1>Apache2 WebServer is Smoothly Running</h1>" > /var/www/html/index.html
+RUN echo "<h1>Apache2 WebServer is Smoothly Running ..</h1>" > /var/www/html/index.html
 CMD [ "/usr/sbin/apachectl","-DFOREGROUND"]
 
 #After Creating This Docker File: build or tag image from this command
